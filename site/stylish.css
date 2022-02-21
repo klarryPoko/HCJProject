@@ -1,0 +1,43 @@
+*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	div{
+		background-color: #00ffff;
+		border: 3px solid black;
+	}
+	p{
+		width:  50%;
+		
+		/*float: Right;*/
+		padding: 10px;
+		margin-bottom: 15px;
+		margin-top: 25px;
+	}
+	#p1{
+		background-color: #D3D3D3;
+	}
+	#chic{
+		background-color: #FFB6C1;
+	}
+	#beef{
+		background-color: #C3143C;
+		color: white;
+	}
+	#sushi{
+		background-color: #DEB833;
+	}
+	section{
+		clear: left;
+	}
+	#box{
+		background-color: lightskyblue;
+		
+		width:  90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		
+		}	
+	 
