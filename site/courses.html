@@ -6,13 +6,13 @@
 	<title>Course List</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 <!--	<link rel="stylesheet" href="js/bootstrap.js">-->
-	<link rel="stylesheet" href = "styles.css"> 
+	<link rel="stylesheet" href = "Mystyles.css"> 
 	<link href='https://fonts.googleapis.com/css?family=Oxegen:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
-	  <nav id="header-nav" class="navbar navbar-default">
-		<div class="container-fluid">
+	 <nav id="header-nav" class="navbar navbar-default navbar-expand-lg navbar-light">
+		<div class="container">
 			<div class="navbar-header">
 				<a href="courses.html" id="L"  class="d-none  d-sm-none  d-md-block">
 					<div id="logo-img" alt="Logo image" ></div>
@@ -27,22 +27,52 @@
 					<button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
       					
       					
-      					<i class="fas fa-bars"><span class="icon-bar"></span>
-      					<span class="icon-bar">Me</span>
-      					<span class="icon-bar">Collapse</span></i>
+      					<i class="fas fa-bars">Help<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span></i>
     				</button>
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
 
 			</div>	
 		</div>	
 	  </nav>
-	  
-
-</header>
-<!--    <h1>Course List</h1>
-   <div class="container-fluid">
+	</header>
+    
+   <div class="container">
+   	<h1>Course List</h1>
    	<h3>Introductory Topics</h3>
   <div class="row">
-		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">Computational Thinking</h3> <p> An introduction to computational thinking.</p> 
+		<div class="col-sm-6  col-md-4"> 
+			<section id="p1"> 
+			<h3 id="CTitle">Computational Thinking</h3> <p> An introduction to computational thinking.</p> 
 		 </section>
 		</div>
 		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">Algorithmic Problem Solving</h3> <p> Learn about the 5 steps of problem solving. We will introduce you to designing algorithms with flowcharts, writing C++ code, hand tracing code to find semantic errors, and some simple strategies to test code structures. </p> 
@@ -54,10 +84,11 @@
 	</div>
 	<h3> Intermediate Topics</h3>
 	<div class="row">
-		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">Functions</h3> <p> An introduction to modularized programming.</p> 
+		<div class="col-sm-6  col-md-4"> <section id="p1"> <a target="_blank" href="ham.html"><h3 id="CTitle">Functions</h3> </a>
+			<p> An introduction to modularized programming.</p> 
 		 </section>
 		</div>
-		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">Arrays</h3> <p> Using arrays to group data. </p> 
+		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">Arrays</h3> <a href="https://goo.gl/maps/pHfZRG2fozre8Z8M7" target="_blank"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.0517305441863!2d-90.18696498465765!3d38.624690979613646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f0607541e5b5%3A0x79ed2889c696a834!2sThe%20Gateway%20Arch!5e0!3m2!1sen!2sus!4v1645930367859!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe><p> Using arrays to group data. </p> </a>
 		 </section>
 		</div>
 		<div class="col-sm-6  col-md-4"> <section id="p1"> <h3 id="CTitle">structs</h3> <p> Grouping data of different types. </p> 
@@ -65,7 +96,7 @@
 		</div>
 	</div>
 	
-</div>-->
+</div>
 	<script src="js/bootstrap.min.js"></script>
 	<script src = "js.script.js"></script>
 </body>
