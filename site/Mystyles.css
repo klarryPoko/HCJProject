@@ -56,3 +56,38 @@ h1{ text-align: center; }
     font-size: 3.5vw;
   }
 }
+ /**  Footer  */
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+#hours, #about{
+	line-height: 2;
+}
+#about>span{
+	font-size: .9em;
+}
+#about p{
+	font-size: .8em;
+}
+
+#hours>span{
+	font-size: .9em;
+	color: #557c3e;
+}
+#hours p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.4;
+}
+#copyright{
+	text-align: center;
+	font-size: .8em;
+}
