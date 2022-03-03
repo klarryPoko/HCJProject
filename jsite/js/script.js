@@ -1,4 +1,43 @@
-var x=5;
+//Part 5 stuff
+// console.log(document.getElementById("title"));
+// console.log(document instanceof HTMLDocument);
+
+document.addEventListener("DOMContentLoaded",
+	function (event){
+		function sayHello(event){
+			console.log(event);
+			var input =	document.getElementById("name").value;
+			var message = "<h2>Hello "+input+"!</h2>";
+			 
+			// document
+			// .getElementById("content")
+			// .textContent = message;
+			document
+			.getElementById("content")
+			.innerHTML = message;
+
+			if (input === "student"){
+				var title = document
+					.querySelector("#title")
+					.textContent;
+				title +=" & Loving it!";
+				title = document
+						.querySelector("#title")
+						.textContent = title;
+				}
+		 }
+			document.querySelector("button")
+			.addEventListener("click", sayHello);
+	 }
+ );
+
+
+//Unobtrusive event binding
+
+//another way
+// document.querySelector("button")
+// .onclick = sayHello;
+//var x=5;
 /*
 var message="in global";
 console.log("global: message = "+message);
@@ -81,32 +120,32 @@ a();*/
 // console.log("Result:"+result+"   Double: "+dub);
 
 //function constructors
-function Circle(radius){
-	console.log(this);
-	this.radius = radius;
+// function Circle(radius){
+// 	console.log(this);
+// 	this.radius = radius;
 	
-}
+// }
 
-Circle.prototype.getArea =  function(){
-		return Math.PI * Math.pow(this.radius, 2);
-	};
+// Circle.prototype.getArea =  function(){
+// 		return Math.PI * Math.pow(this.radius, 2);
+// 	};
 
-var myCircle = new Circle(10);
-console.log(myCircle.getArea());
-console.log(myCircle);
+// var myCircle = new Circle(10);
+// console.log(myCircle.getArea());
+// console.log(myCircle);
 
-var other = new Circle(20);
-console.log(other.getArea());
-console.log(other);
+// var other = new Circle(20);
+// console.log(other.getArea());
+// console.log(other);
 
-//Object literals and "this"
-var literalCircle = {
-	radius:10,
-	getArea:function(){
-		console.log(this + " refers to the local 'this', not global.");
-		return Math.PI*Math.pow(this.radius,2);
-	}
-};
+// //Object literals and "this"
+// var literalCircle = {
+// 	radius:10,
+// 	getArea:function(){
+// 		console.log(this + " refers to the local 'this', not global.");
+// 		return Math.PI*Math.pow(this.radius,2);
+// 	}
+// };
 
-literalCircle.getArea();
-console.log(literalCircle.getArea());
+// literalCircle.getArea();
+// console.log(literalCircle.getArea());
