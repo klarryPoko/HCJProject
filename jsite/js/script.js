@@ -1,35 +1,77 @@
+//Using AJAX
+// Event handling
+
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", function () {
+      // var self=this;  var name="";
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+              var message = 
+                res.firstName + " " + res.lastName
+              if (res.likesChineseFood) {
+                message += " likes Chinese food";
+              }
+              else {
+                message += " doesn't like Chinese food";
+              }
+              message += " and uses ";
+              message += res.numberOfDisplays;
+              message += " displays for coding.";
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>" +name+ message + "</h2>";
+            });
+      });
+  }
+);
+
+
 //Part 5 stuff
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
 
-document.addEventListener("DOMContentLoaded",
-	function (event){
-		function sayHello(event){
-			console.log(event);
-			var input =	document.getElementById("name").value;
-			var message = "<h2>Hello "+input+"!</h2>";
+// document.addEventListener("DOMContentLoaded",
+// 	function (event){
+// 		// function sayHello(event){
+// 		// 	console.log(event);
+// 		// 	var input =	document.getElementById("name").value;
+// 		// 	var message = "<h2>Hello "+input+"!</h2>";
 			 
-			// document
-			// .getElementById("content")
-			// .textContent = message;
-			document
-			.getElementById("content")
-			.innerHTML = message;
+// 		// 	// document
+// 		// 	// .getElementById("content")
+// 		// 	// .textContent = message;
+// 		// 	document
+// 		// 	.getElementById("content")
+// 		// 	.innerHTML = message;
 
-			if (input === "student"){
-				var title = document
-					.querySelector("#title")
-					.textContent;
-				title +=" & Loving it!";
-				title = document
-						.querySelector("#title")
-						.textContent = title;
-				}
-		 }
-			document.querySelector("button")
-			.addEventListener("click", sayHello);
-	 }
- );
+// 		// 	if (input === "student"){
+// 		// 		var title = document
+// 		// 			.querySelector("#title")
+// 		// 			.textContent;
+// 		// 		title +=" & Loving it!";
+// 		// 		title = document
+// 		// 				.querySelector("#title")
+// 		// 				.textContent = title;
+// 		// 		}
+// 		//  }
+// 			document.querySelector("button")
+// 			.addEventListener("click", sayHello);
+
+// 			document.querySelector("body")
+// 			.addEventListener("mousemove",
+// 				function (event) {
+// 					console.log("x:"+event.clientX);
+// 					console.log("y:"+event.clientY);
+// 				}
+// 				);	
+// 	 }
+//  );
 
 
 //Unobtrusive event binding
